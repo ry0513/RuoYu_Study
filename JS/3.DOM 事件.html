@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div {
+        background-color: aqua;
+        width: 500px;
+        height: 500px;
+      }
+      .div {
+        background-color: rgb(31, 150, 150);
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div">
+      <div class="div"></div>
+    </div>
+    <script>
+      const div = document.getElementById("div");
+      div.onclick = () => {
+        console.log("点击");
+      };
+      div.ondblclick = () => {
+        console.log("双击");
+      };
+      div.onmousedown = () => {
+        console.log("按下按钮");
+      };
+      div.onmouseup = () => {
+        console.log("松开按键");
+      };
+      div.onmouseenter = () => {
+        console.log("移入元素");
+      };
+      div.onmouseleave = () => {
+        console.log("移出元素");
+      };
+      div.onmousemove = () => {
+        console.log("移动");
+      };
+      div.onmouseover = () => {
+        console.log("在元素上");
+      };
+      div.onmouseout = () => {
+        console.log("移开元素");
+      };
+      window.onkeypress = () => {
+        console.log("key");
+      };
+    </script>
+  </body>
+</html>
